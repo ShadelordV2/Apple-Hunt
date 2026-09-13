@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cebsdhfn4bdjm" path="res://assets/images/tilemap/Terrain (16x16).png" id="2_316ec"]
 [ext_resource type="Texture2D" uid="uid://xip2j3dt14r0" path="res://assets/images/finish/Checkpoint (Flag Idle)(64x64).png" id="3_hctss"]
 [ext_resource type="PackedScene" uid="uid://cev6n13fwic8j" path="res://scenes/apple.tscn" id="5_6x3xw"]
+[ext_resource type="PackedScene" uid="uid://dsxllurmf1gpw" path="res://scenes/snail.tscn" id="6_fngl8"]
 [ext_resource type="PackedScene" uid="uid://vt4xele0ldfg" path="res://scenes/player.tscn" id="6_wrd1n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rrv0w"]
@@ -439,3 +440,9 @@ shape = SubResource("RectangleShape2D_jj6j5")
 [node name="player" parent="." unique_id=1239286283 instance=ExtResource("6_wrd1n")]
 position = Vector2(32, 187.66666)
 scale = Vector2(1.2, 1.2)
+
+[node name="snails" type="Node2D" parent="." unique_id=524875016]
+
+[node name="snail" parent="snails" unique_id=740155122 instance=ExtResource("6_fngl8")]
+position = Vector2(387.33334, 205.33333)
+scale = Vector2(0.5, 0.5)
