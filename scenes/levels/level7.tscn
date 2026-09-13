@@ -430,7 +430,7 @@ position = Vector2(98.33333, 180.33334)
 scale = Vector2(0.5, 0.5)
 
 [node name="exit" type="Area2D" parent="." unique_id=1874358581]
-position = Vector2(426.00003, 70.66667)
+position = Vector2(440.66666, 70)
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="exit" unique_id=688470446]
