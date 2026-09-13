@@ -1,8 +1,11 @@
 extends Node2D
 @onready var fade: ColorRect = $HUD/Fade
 @onready var score_label: Label = $HUD/ScorePanel/ScoreLabel
+@onready var full_score_label: Label = $HUD/FullScorePanel/FullScoreLabel
+
 
 var score: int = 0
+var level_score: int = 0
 var level: int = 1
 var current_level_root: Node = null
 
@@ -17,11 +20,12 @@ func _ready() -> void:
 # --------------------
 
 func _load_level(level_number: int, reset_score: bool) -> void:
+	
 	# Fade out
 	await _fade(1.0)
 	
 	if reset_score:
-		score = 0
+		level_score = 0
 		score_label.text = "SCORE: 0"
 	
 	if current_level_root:
@@ -60,6 +64,7 @@ func _on_exit_body_entered(body: Node2D) -> void:
 	if body.name == "player":
 		level += 1
 		body.can_move = false
+		increase_full_score()
 		await _load_level(level, false)
 		
 
@@ -68,10 +73,15 @@ func _on_player_died(body):
 	await _load_level(level, true)
 
 func increase_score() -> void:
-	score += 1
-	score_label.text = "SCORE: %s" % score
+	level_score += 1
+	score_label.text = "SCORE: %s" % level_score
 
-
+func increase_full_score() -> void:
+	score += level_score
+	full_score_label.text = "FULLSCORE: %s" % score
+	level_score = 0
+	score_label.text = "SCORE: 0"
+	
 # ---------------
 # FADE
 # ---------------

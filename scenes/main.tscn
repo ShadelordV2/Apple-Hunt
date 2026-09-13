@@ -29,12 +29,12 @@ script = ExtResource("1_0wfyh")
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -100.0
-offset_top = 20.0
-offset_right = 100.0
-offset_bottom = 70.0
+offset_left = 460.0
+offset_right = 660.0
+offset_bottom = 50.0
 grow_horizontal = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_jj6j5")
+metadata/_edit_group_ = true
 
 [node name="ScoreLabel" type="Label" parent="HUD/ScorePanel" unique_id=2135807051]
 layout_mode = 1
@@ -43,9 +43,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -85.5
+offset_left = -92.5
 offset_top = -25.5
-offset_right = 85.5
+offset_right = 78.5
 offset_bottom = 25.5
 grow_horizontal = 2
 grow_vertical = 2
@@ -62,7 +62,35 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
+[node name="FullScorePanel" type="Panel" parent="HUD" unique_id=144132009]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -640.0
+offset_right = -365.0
+offset_bottom = 50.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_jj6j5")
+
+[node name="FullScoreLabel" type="Label" parent="HUD/FullScorePanel" unique_id=1211370690]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -127.5
+offset_top = -25.5
+offset_right = 132.5
+offset_bottom = 25.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_sugp2")
+theme_override_font_sizes/font_size = 50
+text = "FULLSCORE: 0"
+
 [node name="music" type="AudioStreamPlayer2D" parent="." unique_id=1401724240]
 stream = ExtResource("4_jyhfs")
 volume_db = -10.0
 autoplay = true
+parameters/looping = true
