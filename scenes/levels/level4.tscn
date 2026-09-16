@@ -411,7 +411,7 @@ frame_progress = 0.7679092
 [node name="snails" type="Node2D" parent="." unique_id=291389964]
 
 [node name="snail" parent="snails" unique_id=740155122 instance=ExtResource("4_4vryo")]
-position = Vector2(199.33334, 205)
+position = Vector2(229.66667, 206)
 scale = Vector2(0.5, 0.5)
 
 [node name="snail2" parent="snails" unique_id=536149084 instance=ExtResource("4_4vryo")]
@@ -425,7 +425,7 @@ position = Vector2(104, 149.33334)
 scale = Vector2(0.5, 0.5)
 
 [node name="apple2" parent="apples" unique_id=161019944 instance=ExtResource("5_g1ckg")]
-position = Vector2(207.33334, 208.33334)
+position = Vector2(162.66667, 186.66667)
 scale = Vector2(0.5, 0.5)
 
 [node name="apple3" parent="apples" unique_id=734685096 instance=ExtResource("5_g1ckg")]
