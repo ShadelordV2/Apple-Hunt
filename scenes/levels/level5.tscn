@@ -401,7 +401,8 @@ layer_0/tile_data = PackedInt32Array(917505, 65536, 10, 917506, 65536, 10, 91750
 
 [node name="flag" type="AnimatedSprite2D" parent="." unique_id=392922338]
 texture_filter = 1
-position = Vector2(414.6667, 48.333332)
+position = Vector2(408.6667, 55.666664)
+scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_jj6j5")
 autoplay = "default"
 frame = 7
