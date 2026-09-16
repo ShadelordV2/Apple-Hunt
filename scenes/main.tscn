@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://duaoc1nslj5yc" path="res://scripts/main.gd" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://cbxh7wsj62jhw" path="res://scenes/levels/level1.tscn" id="2_0wfyh"]
 [ext_resource type="FontFile" uid="uid://by5tpiridk6so" path="res://assets/fonts/Square-Black.ttf" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://gmhjwwwh3tls" path="res://scenes/pause_menu.tscn" id="3_tbgi4"]
 [ext_resource type="AudioStream" uid="uid://gwprlvnx00i" path="res://assets/sounds/music.ogg" id="4_jyhfs"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jj6j5"]
@@ -24,6 +25,8 @@ script = ExtResource("1_0wfyh")
 [node name="LevelRoot" parent="." unique_id=1067290896 instance=ExtResource("2_0wfyh")]
 
 [node name="HUD" type="CanvasLayer" parent="." unique_id=738373975]
+
+[node name="PauseMenu" parent="HUD" unique_id=328901254 instance=ExtResource("3_tbgi4")]
 
 [node name="ScorePanel" type="Panel" parent="HUD" unique_id=866374874]
 anchors_preset = 5
